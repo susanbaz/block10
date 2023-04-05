@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Block 10 The Picasso Painting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form_overlay" id="form_overlay">
+    <div class="form_container">
+      <div class="form_header">
+        <h3>Please sign up before you can browse the website</h3>
+        <button class="exit_button" id="exit_button">&times;</button>
+      </div>
+      <div class="form_body">
+        <form action="submit.php" method="post">
+          <label for="name">Name</label><br>
+          <input type="text" name="name" id="name" required><br><br>
+          <label for="email">Email</label><br>
+          <input type="email" name="email" id="email" required><br><br>
+          <label for="phone">Phone</label><br>
+          <input type="tel" name="phone" id="phone" required><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  <header>
+    <h1>The Picasso Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Exhibitions</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
+    <div class="circle circle1"></div>
+     <div class="circle circle2"></div>
+     <div class="circle circle3"></div>
+     <div class="circle circle4"></div>
+     <div class="circle circle5"></div>
+     <div class="circle circle6"></div>
+   <div class="panel"></div>
+   <div class="panel"></div>
+   <div class="panel"></div>
+   </div>
+   <br>
+   <div class="wrapper1">
+    <div class="triangle triangle2"></div>
+    <div class="triangle triangle1"></div>
+  <div class="section"></div>
+   </div>
+   <br>
+      <div class="section1">
+            </div>
+            <footer>
+                <p>&copy; The Picasso Gallery 2023</p>
+              </footer>
+     <script>
+    var formOverlay = document.getElementById("form_overlay");
+    var exitButton = document.getElementById("exit_button");
+
+    exitButton.onclick = function() {
+      formOverlay.style.display = "none";
+    }
+
+    window.onload = function() {
+      formOverlay.style.display = "block";
+    }
+  </script>
+</body>
+
+</html>
+
+    
+
+  
+    
